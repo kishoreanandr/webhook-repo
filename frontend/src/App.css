@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+}
+
+.App {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.event-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.event {
+  background: #f1f8e9;
+  padding: 15px;
+  border-left: 4px solid #4caf50;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+/* Webhook Event Viewer Styles */
+.webhook-event-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.webhook-event-item {
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(80, 80, 180, 0.06);
+  margin-bottom: 18px;
+  padding: 18px 24px;
+  text-align: left;
+  transition: box-shadow 0.2s;
+  border: 1px solid #e3e6f0;
+}
+.webhook-event-item:hover {
+  box-shadow: 0 4px 16px rgba(80, 80, 180, 0.13);
+  background: #eef3fa;
+}
+.webhook-event-message {
+  font-size: 1.08rem;
+  color: #222b45;
+  font-weight: 500;
+}
+.webhook-event-timestamp {
+  font-size: 0.92rem;
+  color: #6c757d;
+  margin-top: 6px;
+  display: block;
+}
+
+/* Webhook Event Viewer Enhanced Styles */
+.webhook-event-section {
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(80, 80, 180, 0.10);
+  padding: 2.5rem 1.5rem;
+  margin: 0 auto 2rem auto;
+  max-width: 800px;
+}
+.webhook-event-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.webhook-event-table th, .webhook-event-table td {
+  padding: 1.1rem 1.2rem;
+  text-align: left;
+  border: none;
+}
+
+.webhook-event-table th {
+  background: linear-gradient(to right, #6366f1, #7c3aed);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.webhook-event-table td {
+  background: #f9fbff;
+  font-size: 1.02rem;
+  color: #374151;
+  vertical-align: top;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.05);
+}
+
+.webhook-event-row {
+  transition: all 0.2s ease-in-out;
+}
+
+.webhook-event-row:hover td {
+  background: #eef2ff;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.12);
+  transform: scale(1.01);
+}
+
+.webhook-event-message {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.webhook-event-timestamp {
+  color: #6366f1;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
